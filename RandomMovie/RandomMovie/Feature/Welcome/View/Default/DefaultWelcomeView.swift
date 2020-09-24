@@ -13,6 +13,7 @@ final class DefaultWelcomeView: UIView, WelcomeView {
   
   private func setupView() {
     addSubview(titleLabel)
+    backgroundColor = .white
   }
   
   private func setupConstraints() {
