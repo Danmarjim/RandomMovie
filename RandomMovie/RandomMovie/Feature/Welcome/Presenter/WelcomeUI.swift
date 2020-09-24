@@ -1,3 +1,3 @@
-protocol WelcomeUI {
+protocol WelcomeUI: class, AutoMockable {
   func setupUI()
 }

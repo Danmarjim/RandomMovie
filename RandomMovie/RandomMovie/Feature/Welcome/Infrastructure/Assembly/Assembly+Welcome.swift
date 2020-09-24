@@ -7,7 +7,7 @@ extension Assembly: WelcomeProvider {
     let welcomeViewController = WelcomeViewController()
     welcomeViewController.welcomeView = welcomeView
     
-    var presenter = welcomePresenter()
+    let presenter = welcomePresenter()
     presenter.ui = welcomeViewController
     welcomeViewController.presenter = presenter
     

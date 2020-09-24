@@ -1,0 +1,6 @@
+framework module Pods_RandomMovieTests {
+  umbrella header "Pods-RandomMovieTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
