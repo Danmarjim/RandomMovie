@@ -10,7 +10,7 @@ struct FontLoader {
   static func load(_ type: FontType, size: FontSize) -> UIFont {
     var fontPath = ""
     
-    if let otfFontPath = Bundle.main.path(forResource: path(for: type), ofType: "ttf") {
+    if let otfFontPath = Bundle.framework.path(forResource: path(for: type), ofType: "ttf") {
       fontPath = otfFontPath
     } else {
       fatalError("Path for font type \(type) not found")
