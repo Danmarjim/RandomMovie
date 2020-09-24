@@ -1,0 +1,3 @@
+protocol WelcomeUI {
+  func setupUI()
+}

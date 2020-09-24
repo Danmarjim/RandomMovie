@@ -7,17 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D75DEE8251CE99C005EAE89 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D75DEE7251CE99C005EAE89 /* WelcomeView.swift */; };
+		1D75DEEA251CE9A3005EAE89 /* DefaultWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D75DEE9251CE9A3005EAE89 /* DefaultWelcomeView.swift */; };
+		1D75DEED251CEB2C005EAE89 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1D75DEEC251CEB2C005EAE89 /* SnapKit */; };
+		1D75DEF1251CEBE8005EAE89 /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D75DEF0251CEBE8005EAE89 /* Spacing.swift */; };
+		1D75DEF6251CECDB005EAE89 /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D75DEF5251CECDB005EAE89 /* WelcomePresenter.swift */; };
+		1D75DEF8251CECE6005EAE89 /* WelcomeUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D75DEF7251CECE6005EAE89 /* WelcomeUI.swift */; };
+		1D75DEFA251CECEF005EAE89 /* DefaultWelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D75DEF9251CECEF005EAE89 /* DefaultWelcomePresenter.swift */; };
+		1D75DEFD251CEF0C005EAE89 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D75DEFC251CEF0C005EAE89 /* Font.swift */; };
+		1D75DF01251CEFEE005EAE89 /* FontLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D75DEFF251CEFED005EAE89 /* FontLoader.swift */; };
+		1D75DF02251CEFEE005EAE89 /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D75DF00251CEFEE005EAE89 /* FontSize.swift */; };
+		1D75DF05251CF027005EAE89 /* MontserratMediumFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D75DF03251CF027005EAE89 /* MontserratMediumFont.swift */; };
+		1D75DF06251CF027005EAE89 /* MontserratRegularFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D75DF04251CF027005EAE89 /* MontserratRegularFont.swift */; };
+		1D75DF0D251CF5A8005EAE89 /* Bundle+Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D75DF0C251CF5A8005EAE89 /* Bundle+Framework.swift */; };
+		1D75DF13251CF8A7005EAE89 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D75DF11251CF8A7005EAE89 /* Montserrat-Medium.ttf */; };
+		1D75DF14251CF8A7005EAE89 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D75DF12251CF8A7005EAE89 /* Montserrat-Regular.ttf */; };
 		1D7EFE88251CD327004BA416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7EFE87251CD327004BA416 /* AppDelegate.swift */; };
 		1D7EFE8A251CD327004BA416 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7EFE89251CD327004BA416 /* SceneDelegate.swift */; };
-		1D7EFE8C251CD327004BA416 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7EFE8B251CD327004BA416 /* ContentView.swift */; };
 		1D7EFE8E251CD328004BA416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7EFE8D251CD328004BA416 /* Assets.xcassets */; };
-		1D7EFE91251CD328004BA416 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7EFE90251CD328004BA416 /* Preview Assets.xcassets */; };
 		1D7EFE94251CD328004BA416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7EFE92251CD328004BA416 /* LaunchScreen.storyboard */; };
 		1D7EFE9F251CD328004BA416 /* RandomMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7EFE9E251CD328004BA416 /* RandomMovieTests.swift */; };
 		1D7EFEAA251CD328004BA416 /* RandomMovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7EFEA9251CD328004BA416 /* RandomMovieUITests.swift */; };
 		1D7EFEB9251CE30D004BA416 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 1D7EFEB8251CE30D004BA416 /* Moya */; };
 		1D7EFEBB251CE30D004BA416 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 1D7EFEBA251CE30D004BA416 /* ReactiveMoya */; };
 		1D7EFEBD251CE30D004BA416 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 1D7EFEBC251CE30D004BA416 /* RxMoya */; };
+		1D7EFEC2251CE673004BA416 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7EFEC1251CE673004BA416 /* Assembly.swift */; };
+		1D7EFECB251CE73E004BA416 /* Assembly+Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7EFECA251CE73E004BA416 /* Assembly+Welcome.swift */; };
+		1D7EFECD251CE78A004BA416 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7EFECC251CE78A004BA416 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +54,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D75DEE7251CE99C005EAE89 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		1D75DEE9251CE9A3005EAE89 /* DefaultWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWelcomeView.swift; sourceTree = "<group>"; };
+		1D75DEF0251CEBE8005EAE89 /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		1D75DEF5251CECDB005EAE89 /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		1D75DEF7251CECE6005EAE89 /* WelcomeUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeUI.swift; sourceTree = "<group>"; };
+		1D75DEF9251CECEF005EAE89 /* DefaultWelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWelcomePresenter.swift; sourceTree = "<group>"; };
+		1D75DEFC251CEF0C005EAE89 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		1D75DEFF251CEFED005EAE89 /* FontLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontLoader.swift; sourceTree = "<group>"; };
+		1D75DF00251CEFEE005EAE89 /* FontSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
+		1D75DF03251CF027005EAE89 /* MontserratMediumFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MontserratMediumFont.swift; sourceTree = "<group>"; };
+		1D75DF04251CF027005EAE89 /* MontserratRegularFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MontserratRegularFont.swift; sourceTree = "<group>"; };
+		1D75DF0C251CF5A8005EAE89 /* Bundle+Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Framework.swift"; sourceTree = "<group>"; };
+		1D75DF11251CF8A7005EAE89 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		1D75DF12251CF8A7005EAE89 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		1D7EFE84251CD327004BA416 /* RandomMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7EFE87251CD327004BA416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D7EFE89251CD327004BA416 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D7EFE8B251CD327004BA416 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1D7EFE8D251CD328004BA416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1D7EFE90251CD328004BA416 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D7EFE93251CD328004BA416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D7EFE95251CD328004BA416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D7EFE9A251CD328004BA416 /* RandomMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +80,9 @@
 		1D7EFEA5251CD328004BA416 /* RandomMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7EFEA9251CD328004BA416 /* RandomMovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMovieUITests.swift; sourceTree = "<group>"; };
 		1D7EFEAB251CD328004BA416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D7EFEC1251CE673004BA416 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		1D7EFECA251CE73E004BA416 /* Assembly+Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+Welcome.swift"; sourceTree = "<group>"; };
+		1D7EFECC251CE78A004BA416 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D7EFEBD251CE30D004BA416 /* RxMoya in Frameworks */,
+				1D75DEED251CEB2C005EAE89 /* SnapKit in Frameworks */,
 				1D7EFEB9251CE30D004BA416 /* Moya in Frameworks */,
 				1D7EFEBB251CE30D004BA416 /* ReactiveMoya in Frameworks */,
 			);
@@ -82,6 +114,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D75DEEE251CEBCB005EAE89 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1D75DEFB251CEF01005EAE89 /* Font */,
+				1D75DEEF251CEBD5005EAE89 /* Spacing */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1D75DEEF251CEBD5005EAE89 /* Spacing */ = {
+			isa = PBXGroup;
+			children = (
+				1D75DEF0251CEBE8005EAE89 /* Spacing.swift */,
+			);
+			path = Spacing;
+			sourceTree = "<group>";
+		};
+		1D75DEF3251CECC6005EAE89 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1D75DEF4251CECCE005EAE89 /* Default */,
+				1D75DEF5251CECDB005EAE89 /* WelcomePresenter.swift */,
+				1D75DEF7251CECE6005EAE89 /* WelcomeUI.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1D75DEF4251CECCE005EAE89 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				1D75DEF9251CECEF005EAE89 /* DefaultWelcomePresenter.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		1D75DEFB251CEF01005EAE89 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				1D75DEFC251CEF0C005EAE89 /* Font.swift */,
+				1D75DEFF251CEFED005EAE89 /* FontLoader.swift */,
+				1D75DF00251CEFEE005EAE89 /* FontSize.swift */,
+				1D75DEFE251CEFE1005EAE89 /* Variation */,
+				1D75DF07251CF03E005EAE89 /* Resources */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		1D75DEFE251CEFE1005EAE89 /* Variation */ = {
+			isa = PBXGroup;
+			children = (
+				1D75DF04251CF027005EAE89 /* MontserratRegularFont.swift */,
+				1D75DF03251CF027005EAE89 /* MontserratMediumFont.swift */,
+			);
+			path = Variation;
+			sourceTree = "<group>";
+		};
+		1D75DF07251CF03E005EAE89 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1D75DF11251CF8A7005EAE89 /* Montserrat-Medium.ttf */,
+				1D75DF12251CF8A7005EAE89 /* Montserrat-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1D75DF0A251CF586005EAE89 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1D75DF0B251CF593005EAE89 /* Bundle */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1D75DF0B251CF593005EAE89 /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				1D75DF0C251CF5A8005EAE89 /* Bundle+Framework.swift */,
+			);
+			path = Bundle;
+			sourceTree = "<group>";
+		};
 		1D7EFE7B251CD327004BA416 = {
 			isa = PBXGroup;
 			children = (
@@ -105,23 +218,11 @@
 		1D7EFE86251CD327004BA416 /* RandomMovie */ = {
 			isa = PBXGroup;
 			children = (
-				1D7EFE87251CD327004BA416 /* AppDelegate.swift */,
-				1D7EFE89251CD327004BA416 /* SceneDelegate.swift */,
-				1D7EFE8B251CD327004BA416 /* ContentView.swift */,
-				1D7EFE8D251CD328004BA416 /* Assets.xcassets */,
-				1D7EFE92251CD328004BA416 /* LaunchScreen.storyboard */,
-				1D7EFE95251CD328004BA416 /* Info.plist */,
-				1D7EFE8F251CD328004BA416 /* Preview Content */,
+				1D7EFEBE251CE4D8004BA416 /* App */,
+				1D7EFEC4251CE6F1004BA416 /* Feature */,
+				1D7EFEC3251CE6E6004BA416 /* Design */,
 			);
 			path = RandomMovie;
-			sourceTree = "<group>";
-		};
-		1D7EFE8F251CD328004BA416 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				1D7EFE90251CD328004BA416 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		1D7EFE9D251CD328004BA416 /* RandomMovieTests */ = {
@@ -140,6 +241,96 @@
 				1D7EFEAB251CD328004BA416 /* Info.plist */,
 			);
 			path = RandomMovieUITests;
+			sourceTree = "<group>";
+		};
+		1D7EFEBE251CE4D8004BA416 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1D7EFE87251CD327004BA416 /* AppDelegate.swift */,
+				1D7EFE89251CD327004BA416 /* SceneDelegate.swift */,
+				1D7EFE92251CD328004BA416 /* LaunchScreen.storyboard */,
+				1D7EFE95251CD328004BA416 /* Info.plist */,
+				1D7EFEBF251CE63B004BA416 /* Infrastructure */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1D7EFEBF251CE63B004BA416 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				1D75DF0A251CF586005EAE89 /* Extension */,
+				1D7EFEC0251CE65E004BA416 /* Assembly */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		1D7EFEC0251CE65E004BA416 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1D7EFEC1251CE673004BA416 /* Assembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		1D7EFEC3251CE6E6004BA416 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				1D75DEEE251CEBCB005EAE89 /* Components */,
+				1D7EFE8D251CD328004BA416 /* Assets.xcassets */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		1D7EFEC4251CE6F1004BA416 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				1D7EFEC5251CE712004BA416 /* Welcome */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		1D7EFEC5251CE712004BA416 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				1D7EFEC7251CE720004BA416 /* View */,
+				1D75DEF3251CECC6005EAE89 /* Presenter */,
+				1D7EFEC6251CE718004BA416 /* Infrastructure */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		1D7EFEC6251CE718004BA416 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				1D7EFEC8251CE72D004BA416 /* Assembly */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		1D7EFEC7251CE720004BA416 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D7EFECE251CE7F3004BA416 /* Default */,
+				1D7EFECC251CE78A004BA416 /* WelcomeViewController.swift */,
+				1D75DEE7251CE99C005EAE89 /* WelcomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1D7EFEC8251CE72D004BA416 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1D7EFECA251CE73E004BA416 /* Assembly+Welcome.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		1D7EFECE251CE7F3004BA416 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				1D75DEE9251CE9A3005EAE89 /* DefaultWelcomeView.swift */,
+			);
+			path = Default;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +353,7 @@
 				1D7EFEB8251CE30D004BA416 /* Moya */,
 				1D7EFEBA251CE30D004BA416 /* ReactiveMoya */,
 				1D7EFEBC251CE30D004BA416 /* RxMoya */,
+				1D75DEEC251CEB2C005EAE89 /* SnapKit */,
 			);
 			productName = RandomMovie;
 			productReference = 1D7EFE84251CD327004BA416 /* RandomMovie.app */;
@@ -237,6 +429,7 @@
 			mainGroup = 1D7EFE7B251CD327004BA416;
 			packageReferences = (
 				1D7EFEB7251CE30D004BA416 /* XCRemoteSwiftPackageReference "Moya" */,
+				1D75DEEB251CEB2C005EAE89 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 1D7EFE85251CD327004BA416 /* Products */;
 			projectDirPath = "";
@@ -254,8 +447,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D75DF14251CF8A7005EAE89 /* Montserrat-Regular.ttf in Resources */,
+				1D75DF13251CF8A7005EAE89 /* Montserrat-Medium.ttf in Resources */,
 				1D7EFE94251CD328004BA416 /* LaunchScreen.storyboard in Resources */,
-				1D7EFE91251CD328004BA416 /* Preview Assets.xcassets in Resources */,
 				1D7EFE8E251CD328004BA416 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,9 +475,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7EFECB251CE73E004BA416 /* Assembly+Welcome.swift in Sources */,
+				1D75DEF6251CECDB005EAE89 /* WelcomePresenter.swift in Sources */,
+				1D75DF01251CEFEE005EAE89 /* FontLoader.swift in Sources */,
+				1D75DEE8251CE99C005EAE89 /* WelcomeView.swift in Sources */,
+				1D75DEEA251CE9A3005EAE89 /* DefaultWelcomeView.swift in Sources */,
+				1D75DF0D251CF5A8005EAE89 /* Bundle+Framework.swift in Sources */,
+				1D75DF05251CF027005EAE89 /* MontserratMediumFont.swift in Sources */,
+				1D7EFECD251CE78A004BA416 /* WelcomeViewController.swift in Sources */,
 				1D7EFE88251CD327004BA416 /* AppDelegate.swift in Sources */,
+				1D75DEF8251CECE6005EAE89 /* WelcomeUI.swift in Sources */,
+				1D75DEF1251CEBE8005EAE89 /* Spacing.swift in Sources */,
+				1D75DEFD251CEF0C005EAE89 /* Font.swift in Sources */,
+				1D75DF06251CF027005EAE89 /* MontserratRegularFont.swift in Sources */,
+				1D7EFEC2251CE673004BA416 /* Assembly.swift in Sources */,
+				1D75DEFA251CECEF005EAE89 /* DefaultWelcomePresenter.swift in Sources */,
 				1D7EFE8A251CD327004BA416 /* SceneDelegate.swift in Sources */,
-				1D7EFE8C251CD327004BA416 /* ContentView.swift in Sources */,
+				1D75DF02251CEFEE005EAE89 /* FontSize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,10 +657,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"RandomMovie/Preview Content\"";
 				DEVELOPMENT_TEAM = 9CAPNW6Y62;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = RandomMovie/Info.plist;
+				INFOPLIST_FILE = RandomMovie/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,10 +677,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"RandomMovie/Preview Content\"";
 				DEVELOPMENT_TEAM = 9CAPNW6Y62;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = RandomMovie/Info.plist;
+				INFOPLIST_FILE = RandomMovie/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -612,6 +818,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1D75DEEB251CEB2C005EAE89 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 		1D7EFEB7251CE30D004BA416 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -623,6 +837,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1D75DEEC251CEB2C005EAE89 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D75DEEB251CEB2C005EAE89 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		1D7EFEB8251CE30D004BA416 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1D7EFEB7251CE30D004BA416 /* XCRemoteSwiftPackageReference "Moya" */;

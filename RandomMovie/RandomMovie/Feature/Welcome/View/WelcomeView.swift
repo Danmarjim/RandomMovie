@@ -1,0 +1,3 @@
+protocol WelcomeView {
+  func setup()
+}
