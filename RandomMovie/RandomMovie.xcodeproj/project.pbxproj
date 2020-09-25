@@ -43,6 +43,14 @@
 		1DB2674A251E5A2600798CD6 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB26749251E5A2600798CD6 /* Palette.swift */; };
 		1DB26750251E607900798CD6 /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2674F251E607900798CD6 /* DarkMode.swift */; };
 		1DB26752251E608100798CD6 /* LightMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB26751251E608100798CD6 /* LightMode.swift */; };
+		1DB26764251E79A700798CD6 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB26763251E79A700798CD6 /* Networking.swift */; };
+		1DB26766251E7AAC00798CD6 /* Networking+UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB26765251E7AAC00798CD6 /* Networking+UseCases.swift */; };
+		1DB2676A251E7BB400798CD6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB26769251E7BB400798CD6 /* Environment.swift */; };
+		1DB2676D251E7C0900798CD6 /* Moya+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2676C251E7C0900798CD6 /* Moya+Networking.swift */; };
+		1DB2676F251E7C3900798CD6 /* Environment.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DB2676E251E7C3900798CD6 /* Environment.plist */; };
+		1DB26771251E826700798CD6 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB26770251E826700798CD6 /* Service.swift */; };
+		1DB26773251E82BE00798CD6 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB26772251E82BE00798CD6 /* Endpoint.swift */; };
+		1DB26775251E849000798CD6 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB26774251E849000798CD6 /* Mappable.swift */; };
 		230E421FF74394B8ADB17813 /* Pods_RandomMovie_RandomMovieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F0A5E2B4FB73D096A8D962 /* Pods_RandomMovie_RandomMovieUITests.framework */; };
 		68AC5359F41E5F16E34931CF /* Pods_RandomMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1DE3A5774F88329B9A04B5 /* Pods_RandomMovie.framework */; };
 		BA630D0F5C9CDD1FB9D1D568 /* Pods_RandomMovieSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D5FFEC6D4D2BBF99D3C798 /* Pods_RandomMovieSnapshotTests.framework */; };
@@ -114,6 +122,14 @@
 		1DB26749251E5A2600798CD6 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		1DB2674F251E607900798CD6 /* DarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMode.swift; sourceTree = "<group>"; };
 		1DB26751251E608100798CD6 /* LightMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightMode.swift; sourceTree = "<group>"; };
+		1DB26763251E79A700798CD6 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		1DB26765251E7AAC00798CD6 /* Networking+UseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Networking+UseCases.swift"; sourceTree = "<group>"; };
+		1DB26769251E7BB400798CD6 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		1DB2676C251E7C0900798CD6 /* Moya+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Networking.swift"; sourceTree = "<group>"; };
+		1DB2676E251E7C3900798CD6 /* Environment.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Environment.plist; sourceTree = "<group>"; };
+		1DB26770251E826700798CD6 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		1DB26772251E82BE00798CD6 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		1DB26774251E849000798CD6 /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
 		3ED512233F43518CB3041D32 /* Pods-RandomMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomMovie.release.xcconfig"; path = "Target Support Files/Pods-RandomMovie/Pods-RandomMovie.release.xcconfig"; sourceTree = "<group>"; };
 		4C1DE3A5774F88329B9A04B5 /* Pods_RandomMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D606ED6797AE77D537B118 /* Pods-RandomMovieSnapshotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomMovieSnapshotTests.release.xcconfig"; path = "Target Support Files/Pods-RandomMovieSnapshotTests/Pods-RandomMovieSnapshotTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -379,6 +395,7 @@
 		1D7EFE86251CD327004BA416 /* RandomMovie */ = {
 			isa = PBXGroup;
 			children = (
+				1DB2675D251E78DA00798CD6 /* Networking */,
 				1D7EFEBE251CE4D8004BA416 /* App */,
 				1D7EFEC4251CE6F1004BA416 /* Feature */,
 				1D7EFEC3251CE6E6004BA416 /* Design */,
@@ -447,7 +464,6 @@
 		1D7EFEC4251CE6F1004BA416 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				1DB26747251E587400798CD6 /* OnBoarding */,
 				1D7EFEC5251CE712004BA416 /* Welcome */,
 			);
 			path = Feature;
@@ -505,13 +521,6 @@
 			path = AutoMockable;
 			sourceTree = "<group>";
 		};
-		1DB26747251E587400798CD6 /* OnBoarding */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OnBoarding;
-			sourceTree = "<group>";
-		};
 		1DB26748251E5A1900798CD6 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
@@ -544,6 +553,69 @@
 				1DB2674F251E607900798CD6 /* DarkMode.swift */,
 			);
 			path = Dark;
+			sourceTree = "<group>";
+		};
+		1DB2675D251E78DA00798CD6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1DB2675E251E78FB00798CD6 /* Application */,
+				1DB26761251E798500798CD6 /* Infrasctruture */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1DB2675E251E78FB00798CD6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1DB26760251E796D00798CD6 /* Infrastucture */,
+				1DB2675F251E796400798CD6 /* Application */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1DB2675F251E796400798CD6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1DB26760251E796D00798CD6 /* Infrastucture */ = {
+			isa = PBXGroup;
+			children = (
+				1DB26765251E7AAC00798CD6 /* Networking+UseCases.swift */,
+			);
+			path = Infrastucture;
+			sourceTree = "<group>";
+		};
+		1DB26761251E798500798CD6 /* Infrasctruture */ = {
+			isa = PBXGroup;
+			children = (
+				1DB2676B251E7BF500798CD6 /* Networking */,
+				1DB26768251E7BA800798CD6 /* Environment */,
+				1DB26770251E826700798CD6 /* Service.swift */,
+				1DB2676C251E7C0900798CD6 /* Moya+Networking.swift */,
+				1DB26772251E82BE00798CD6 /* Endpoint.swift */,
+				1DB26774251E849000798CD6 /* Mappable.swift */,
+			);
+			path = Infrasctruture;
+			sourceTree = "<group>";
+		};
+		1DB26768251E7BA800798CD6 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				1DB26769251E7BB400798CD6 /* Environment.swift */,
+				1DB2676E251E7C3900798CD6 /* Environment.plist */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		1DB2676B251E7BF500798CD6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1DB26763251E79A700798CD6 /* Networking.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		A54CE0EBC5DDAFEE38B241F8 /* Pods */ = {
@@ -719,6 +791,7 @@
 				1D75DF13251CF8A7005EAE89 /* Montserrat-Medium.ttf in Resources */,
 				1D7EFE94251CD328004BA416 /* LaunchScreen.storyboard in Resources */,
 				1D7EFE8E251CD328004BA416 /* Assets.xcassets in Resources */,
+				1DB2676F251E7C3900798CD6 /* Environment.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,6 +936,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DB26750251E607900798CD6 /* DarkMode.swift in Sources */,
+				1DB26773251E82BE00798CD6 /* Endpoint.swift in Sources */,
+				1DB26771251E826700798CD6 /* Service.swift in Sources */,
+				1DB2676A251E7BB400798CD6 /* Environment.swift in Sources */,
+				1DB26764251E79A700798CD6 /* Networking.swift in Sources */,
 				1D7EFECB251CE73E004BA416 /* Assembly+Welcome.swift in Sources */,
 				1D75DEF6251CECDB005EAE89 /* WelcomePresenter.swift in Sources */,
 				1D75DF01251CEFEE005EAE89 /* FontLoader.swift in Sources */,
@@ -872,6 +949,8 @@
 				1D75DF0D251CF5A8005EAE89 /* Bundle+Framework.swift in Sources */,
 				1D75DF05251CF027005EAE89 /* MontserratMediumFont.swift in Sources */,
 				1D7EFECD251CE78A004BA416 /* WelcomeViewController.swift in Sources */,
+				1DB2676D251E7C0900798CD6 /* Moya+Networking.swift in Sources */,
+				1DB26775251E849000798CD6 /* Mappable.swift in Sources */,
 				1D7EFE88251CD327004BA416 /* AppDelegate.swift in Sources */,
 				1D75DEF8251CECE6005EAE89 /* WelcomeUI.swift in Sources */,
 				1DB2674A251E5A2600798CD6 /* Palette.swift in Sources */,
@@ -881,6 +960,7 @@
 				1D7EFEC2251CE673004BA416 /* Assembly.swift in Sources */,
 				1D75DEFA251CECEF005EAE89 /* DefaultWelcomePresenter.swift in Sources */,
 				1DB26752251E608100798CD6 /* LightMode.swift in Sources */,
+				1DB26766251E7AAC00798CD6 /* Networking+UseCases.swift in Sources */,
 				1D7EFE8A251CD327004BA416 /* SceneDelegate.swift in Sources */,
 				1D75DF02251CEFEE005EAE89 /* FontSize.swift in Sources */,
 			);
