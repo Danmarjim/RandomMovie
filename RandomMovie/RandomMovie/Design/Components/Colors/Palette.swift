@@ -1,16 +1,8 @@
 import UIKit
 
-protocol Variation {
-  var backgroundColor: UIColor { get }
-}
-
-protocol GrayScale {
-  var ink: UIColor { get }
-}
-
 protocol Mode {
-  var main: Variation { get }
-  var textColor: UIColor { get }
+  var background: UIColor { get }
+  var text: UIColor { get }
 }
 
 protocol PaletteProtocol {
