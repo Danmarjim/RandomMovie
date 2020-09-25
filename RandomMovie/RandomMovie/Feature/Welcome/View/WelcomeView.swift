@@ -1,3 +1,3 @@
 protocol WelcomeView {
-  func setup()
+  func setup(with movie: Movie)
 }
