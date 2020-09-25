@@ -5,6 +5,7 @@ final class DefaultWelcomeView: UIView, WelcomeView {
   private var titleLabel: UILabel = {
     let label = UILabel()
     label.text = "Hello world"
+    label.textColor = Palette.mode.textColor
     label.font = Fontbook.medium.l
     label.numberOfLines = 0
     label.textAlignment = .center
@@ -13,7 +14,7 @@ final class DefaultWelcomeView: UIView, WelcomeView {
   
   private func setupView() {
     addSubview(titleLabel)
-    backgroundColor = .white
+    backgroundColor = Palette.mode.main.backgroundColor
   }
   
   private func setupConstraints() {
