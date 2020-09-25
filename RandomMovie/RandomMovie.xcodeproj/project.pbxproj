@@ -40,6 +40,11 @@
 		1D7EFECB251CE73E004BA416 /* Assembly+Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7EFECA251CE73E004BA416 /* Assembly+Welcome.swift */; };
 		1D7EFECD251CE78A004BA416 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7EFECC251CE78A004BA416 /* WelcomeViewController.swift */; };
 		1D81E570251D25AC0005BBBA /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D81E56F251D25AC0005BBBA /* AutoMockable.generated.swift */; };
+		1DB2674A251E5A2600798CD6 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB26749251E5A2600798CD6 /* Palette.swift */; };
+		1DB26750251E607900798CD6 /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2674F251E607900798CD6 /* DarkMode.swift */; };
+		1DB26752251E608100798CD6 /* LightMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB26751251E608100798CD6 /* LightMode.swift */; };
+		1DB26754251E657C00798CD6 /* LightVariation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB26753251E657C00798CD6 /* LightVariation.swift */; };
+		1DB26756251E658400798CD6 /* DarkVariation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB26755251E658400798CD6 /* DarkVariation.swift */; };
 		230E421FF74394B8ADB17813 /* Pods_RandomMovie_RandomMovieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F0A5E2B4FB73D096A8D962 /* Pods_RandomMovie_RandomMovieUITests.framework */; };
 		68AC5359F41E5F16E34931CF /* Pods_RandomMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1DE3A5774F88329B9A04B5 /* Pods_RandomMovie.framework */; };
 		BA630D0F5C9CDD1FB9D1D568 /* Pods_RandomMovieSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D5FFEC6D4D2BBF99D3C798 /* Pods_RandomMovieSnapshotTests.framework */; };
@@ -108,6 +113,11 @@
 		1D7EFECA251CE73E004BA416 /* Assembly+Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+Welcome.swift"; sourceTree = "<group>"; };
 		1D7EFECC251CE78A004BA416 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		1D81E56F251D25AC0005BBBA /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
+		1DB26749251E5A2600798CD6 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		1DB2674F251E607900798CD6 /* DarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMode.swift; sourceTree = "<group>"; };
+		1DB26751251E608100798CD6 /* LightMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightMode.swift; sourceTree = "<group>"; };
+		1DB26753251E657C00798CD6 /* LightVariation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightVariation.swift; sourceTree = "<group>"; };
+		1DB26755251E658400798CD6 /* DarkVariation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkVariation.swift; sourceTree = "<group>"; };
 		3ED512233F43518CB3041D32 /* Pods-RandomMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomMovie.release.xcconfig"; path = "Target Support Files/Pods-RandomMovie/Pods-RandomMovie.release.xcconfig"; sourceTree = "<group>"; };
 		4C1DE3A5774F88329B9A04B5 /* Pods_RandomMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D606ED6797AE77D537B118 /* Pods-RandomMovieSnapshotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomMovieSnapshotTests.release.xcconfig"; path = "Target Support Files/Pods-RandomMovieSnapshotTests/Pods-RandomMovieSnapshotTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +194,7 @@
 		1D75DEEE251CEBCB005EAE89 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1DB26748251E5A1900798CD6 /* Colors */,
 				1D75DEFB251CEF01005EAE89 /* Font */,
 				1D75DEEF251CEBD5005EAE89 /* Spacing */,
 			);
@@ -440,6 +451,7 @@
 		1D7EFEC4251CE6F1004BA416 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				1DB26747251E587400798CD6 /* OnBoarding */,
 				1D7EFEC5251CE712004BA416 /* Welcome */,
 			);
 			path = Feature;
@@ -495,6 +507,65 @@
 				1D81E56F251D25AC0005BBBA /* AutoMockable.generated.swift */,
 			);
 			path = AutoMockable;
+			sourceTree = "<group>";
+		};
+		1DB26747251E587400798CD6 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		1DB26748251E5A1900798CD6 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				1DB26749251E5A2600798CD6 /* Palette.swift */,
+				1DB26757251E65AA00798CD6 /* Mode */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		1DB26757251E65AA00798CD6 /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+				1DB26758251E65B300798CD6 /* Light */,
+				1DB26759251E65BA00798CD6 /* Dark */,
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		1DB26758251E65B300798CD6 /* Light */ = {
+			isa = PBXGroup;
+			children = (
+				1DB26751251E608100798CD6 /* LightMode.swift */,
+				1DB2675A251E65C400798CD6 /* Variation */,
+			);
+			path = Light;
+			sourceTree = "<group>";
+		};
+		1DB26759251E65BA00798CD6 /* Dark */ = {
+			isa = PBXGroup;
+			children = (
+				1DB2674F251E607900798CD6 /* DarkMode.swift */,
+				1DB2675B251E65CA00798CD6 /* Variation */,
+			);
+			path = Dark;
+			sourceTree = "<group>";
+		};
+		1DB2675A251E65C400798CD6 /* Variation */ = {
+			isa = PBXGroup;
+			children = (
+				1DB26753251E657C00798CD6 /* LightVariation.swift */,
+			);
+			path = Variation;
+			sourceTree = "<group>";
+		};
+		1DB2675B251E65CA00798CD6 /* Variation */ = {
+			isa = PBXGroup;
+			children = (
+				1DB26755251E658400798CD6 /* DarkVariation.swift */,
+			);
+			path = Variation;
 			sourceTree = "<group>";
 		};
 		A54CE0EBC5DDAFEE38B241F8 /* Pods */ = {
@@ -813,6 +884,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB26750251E607900798CD6 /* DarkMode.swift in Sources */,
 				1D7EFECB251CE73E004BA416 /* Assembly+Welcome.swift in Sources */,
 				1D75DEF6251CECDB005EAE89 /* WelcomePresenter.swift in Sources */,
 				1D75DF01251CEFEE005EAE89 /* FontLoader.swift in Sources */,
@@ -824,12 +896,16 @@
 				1D7EFECD251CE78A004BA416 /* WelcomeViewController.swift in Sources */,
 				1D7EFE88251CD327004BA416 /* AppDelegate.swift in Sources */,
 				1D75DEF8251CECE6005EAE89 /* WelcomeUI.swift in Sources */,
+				1DB26756251E658400798CD6 /* DarkVariation.swift in Sources */,
+				1DB2674A251E5A2600798CD6 /* Palette.swift in Sources */,
 				1D75DEF1251CEBE8005EAE89 /* Spacing.swift in Sources */,
 				1D75DEFD251CEF0C005EAE89 /* Font.swift in Sources */,
 				1D75DF06251CF027005EAE89 /* MontserratRegularFont.swift in Sources */,
 				1D7EFEC2251CE673004BA416 /* Assembly.swift in Sources */,
 				1D75DEFA251CECEF005EAE89 /* DefaultWelcomePresenter.swift in Sources */,
+				1DB26752251E608100798CD6 /* LightMode.swift in Sources */,
 				1D7EFE8A251CD327004BA416 /* SceneDelegate.swift in Sources */,
+				1DB26754251E657C00798CD6 /* LightVariation.swift in Sources */,
 				1D75DF02251CEFEE005EAE89 /* FontSize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
