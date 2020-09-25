@@ -1,6 +1,7 @@
 import UIKit
 
 final class WelcomeViewController: UIViewController {
+  
   var presenter: WelcomePresenter?
   var welcomeView: WelcomeView?
   
@@ -16,7 +17,7 @@ final class WelcomeViewController: UIViewController {
 }
 
 extension WelcomeViewController: WelcomeUI {
-  func setupUI() {
-    welcomeView?.setup()
+  func setupUI(with movie: Movie) {
+    welcomeView?.setup(with: movie)
   }
 }

@@ -9,10 +9,9 @@ final class WelcomeViewSpec: XCTestCase {
 }
 
 extension WelcomeViewSpec {
-  
   private func view() -> DefaultWelcomeView {
     let welcomeView = DefaultWelcomeView()
-    welcomeView.setup()
+    welcomeView.setup(with: .mock)
     return welcomeView
   }
 }

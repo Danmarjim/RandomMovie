@@ -2,9 +2,9 @@ import UIKit
 import SnapKit
 
 final class DefaultWelcomeView: UIView, WelcomeView {
+  
   private var titleLabel: UILabel = {
     let label = UILabel()
-    label.text = "Hello world"
     label.textColor = Palette.mode.text
     label.font = Fontbook.medium.l
     label.numberOfLines = 0
@@ -25,8 +25,10 @@ final class DefaultWelcomeView: UIView, WelcomeView {
     }
   }
   
-  func setup() {
+  func setup(with movie: Movie) {
     setupView()
     setupConstraints()
+    
+    titleLabel.text = movie.title
   }
 }

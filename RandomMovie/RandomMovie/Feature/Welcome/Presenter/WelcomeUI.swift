@@ -1,3 +1,3 @@
 protocol WelcomeUI: class, AutoMockable {
-  func setupUI()
+  func setupUI(with movie: Movie)
 }

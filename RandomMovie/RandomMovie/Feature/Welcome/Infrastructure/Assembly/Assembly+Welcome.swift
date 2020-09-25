@@ -7,7 +7,10 @@ extension Assembly: WelcomeProvider {
     let welcomeViewController = WelcomeViewController()
     welcomeViewController.welcomeView = welcomeView
     
-    let presenter = welcomePresenter()
+    let interactor = welcomeInteractor()
+    let presenter = welcomePresenter(interactor: interactor)
+    
+    interactor.delegate = presenter as? DefaultWelcomePresenter
     presenter.ui = welcomeViewController
     welcomeViewController.presenter = presenter
     
@@ -18,7 +21,11 @@ extension Assembly: WelcomeProvider {
     return DefaultWelcomeView()
   }
   
-  private func welcomePresenter() -> WelcomePresenter {
-    return DefaultWelcomePresenter()
+  private func welcomePresenter(interactor: WelcomeInteractor) -> WelcomePresenter {
+    return DefaultWelcomePresenter(interactor: interactor)
+  }
+  
+  private func welcomeInteractor() -> WelcomeInteractor {
+    return DefaultWelcomeInteractor(popularMovies: networking.popularMovies)
   }
 }

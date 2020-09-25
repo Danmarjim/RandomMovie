@@ -4,10 +4,13 @@ inhibit_all_warnings!
 target 'RandomMovie' do
   use_frameworks!
   pod 'Sourcery'
+  pod 'Moya/RxSwift'
 
   target 'RandomMovieSnapshotTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxBlocking'
+    pod 'RxTest'
   end
 
   target 'RandomMovieTests' do
