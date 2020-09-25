@@ -4,25 +4,26 @@ import XCTest
 final class RandomMoviePresenterSpec: XCTestCase {
   
   private var ui: WelcomeUIMock!
+  private var interactor: WelcomeInteractorMock!
   private var sut: DefaultWelcomePresenter!
   
   override func setUp() {
     super.setUp()
     ui = WelcomeUIMock()
-    sut = DefaultWelcomePresenter()
+    interactor = WelcomeInteractorMock()
+    sut = DefaultWelcomePresenter(interactor: interactor)
     sut.ui = ui
   }
   
   func test_did_load_first_time() {
     sut.didLoad()
-    thenLoadUI()
+    thenLoadPopularMovies()
   }
 }
 
 // MARK: - THEN
 extension RandomMoviePresenterSpec {
-  
-  private func thenLoadUI() {
-    XCTAssertTrue(ui.setupUICalled, "Should setup the UI")
+  private func thenLoadPopularMovies() {
+    XCTAssertTrue(interactor.loadPopularMoviesCalled, "Should call popular movies service")
   }
 }
