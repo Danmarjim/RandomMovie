@@ -1,7 +1,7 @@
 import XCTest
 @testable import RandomMovie
 
-final class RandomMoviePresenterSpec: XCTestCase {
+final class WelcomePresenterSpec: XCTestCase {
   
   private var ui: WelcomeUIMock!
   private var interactor: WelcomeInteractorMock!
@@ -22,7 +22,7 @@ final class RandomMoviePresenterSpec: XCTestCase {
 }
 
 // MARK: - THEN
-extension RandomMoviePresenterSpec {
+extension WelcomePresenterSpec {
   private func thenLoadPopularMovies() {
     XCTAssertTrue(interactor.loadPopularMoviesCalled, "Should call popular movies service")
   }

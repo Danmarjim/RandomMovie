@@ -5,17 +5,21 @@ target 'RandomMovie' do
   use_frameworks!
   pod 'Sourcery'
   pod 'Moya/RxSwift'
+  pod 'SnapKit'
+  pod 'OHHTTPStubs/Swift'
 
   target 'RandomMovieSnapshotTests' do
     inherit! :search_paths
     # Pods for testing
-    pod 'RxBlocking'
-    pod 'RxTest'
+    pod 'SnapshotTesting'
   end
 
   target 'RandomMovieTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxBlocking'
+    pod 'RxTest'
+    pod 'OHHTTPStubs/Swift'
   end
 
   target 'RandomMovieUITests' do

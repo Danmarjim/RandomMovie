@@ -5,6 +5,7 @@
 // swiftlint:disable variable_name
 
 import Foundation
+import RxSwift
 @testable import RandomMovie
 #if os(iOS) || os(tvOS) || os(watchOS)
 import UIKit
@@ -25,6 +26,23 @@ import AppKit
 
 
 
+class PopularMoviesUseCaseMock: NSObject, PopularMoviesUseCase {
+
+    //MARK: - execute
+
+    private(set) var executeCallsCount = 0
+    var executeCalled: Bool {
+        return executeCallsCount > 0
+    }
+    var executeReturnValue: Single<ListMovies>!
+    var executeClosure: (() -> Single<ListMovies>)?
+
+    func execute() -> Single<ListMovies> {
+        executeCallsCount += 1
+        return executeClosure.map({ $0() }) ?? executeReturnValue
+    }
+
+}
 class WelcomeInteractorMock: NSObject, WelcomeInteractor {
     var delegate: WelcomeInteractorDelegate?
 
