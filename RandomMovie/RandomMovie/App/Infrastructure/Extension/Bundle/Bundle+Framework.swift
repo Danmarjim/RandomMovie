@@ -1,7 +1,6 @@
 import Foundation
 
 extension Bundle {
-  /// Framework bundle
   static var framework: Bundle {
     guard let url = Bundle(for: Framework.self).url(forResource: "RandomMovie", withExtension: "bundle") else {
       return Bundle(for: Framework.self)
@@ -17,4 +16,5 @@ extension Bundle {
     return Bundle(for: `for`)
   }
 }
+
 private final class Framework {}

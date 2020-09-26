@@ -2,6 +2,7 @@
 // swiftlint:disable variable_name
 
 import Foundation
+import RxSwift
 @testable import RandomMovie
 #if os(iOS) || os(tvOS) || os(watchOS)
 import UIKit
