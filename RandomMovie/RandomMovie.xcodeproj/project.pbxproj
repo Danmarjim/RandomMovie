@@ -889,10 +889,11 @@
 			buildConfigurationList = 1D7EFEAE251CD328004BA416 /* Build configuration list for PBXNativeTarget "RandomMovie" */;
 			buildPhases = (
 				15314A63C5B7DDC1BDA07EF2 /* [CP] Check Pods Manifest.lock */,
+				1D5DEA9F251D23A4002585E4 /* Sourcery */,
 				1D7EFE80251CD327004BA416 /* Sources */,
 				1D7EFE81251CD327004BA416 /* Frameworks */,
 				1D7EFE82251CD327004BA416 /* Resources */,
-				1D5DEA9F251D23A4002585E4 /* Sourcery */,
+				1DDB8C51251F516900F20AD8 /* Swiftlint */,
 				42ED78AC2A87F2A636091D1F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -1074,6 +1075,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "$PODS_ROOT/Sourcery/bin/sourcery --sources ./ --templates ./Templates/Sourcery --output ./RandomMovieTests/AutoMockable\n";
+		};
+		1DDB8C51251F516900F20AD8 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		42ED78AC2A87F2A636091D1F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
