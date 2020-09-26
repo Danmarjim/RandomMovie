@@ -30,4 +30,3 @@ private func endpoint(for service: PopularMoviesService) -> Endpoint {
     return PopularMoviesEndpoint()
   }
 }
-

@@ -2,7 +2,7 @@ import RxSwift
 
 final class DefaultWelcomeInteractor: WelcomeInteractor {
   
-  var delegate: WelcomeInteractorDelegate?
+  weak var delegate: WelcomeInteractorDelegate?
   private let popularMovies: PopularMoviesUseCase
   private let bag = DisposeBag()
   

@@ -15,4 +15,3 @@ extension ListMovies {
     return ListMovies(movies: [.mock, .mock])
   }
 }
-

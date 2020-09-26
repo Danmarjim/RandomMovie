@@ -16,7 +16,7 @@ struct PopularMoviesEndpoint: Endpoint {
                                 encoding: URLEncoding.default)
   }
   
-  func parameters() -> [String : Any]? {
+  func parameters() -> [String: Any]? {
     return ["api_key": Service.apiKey]
   }
 }

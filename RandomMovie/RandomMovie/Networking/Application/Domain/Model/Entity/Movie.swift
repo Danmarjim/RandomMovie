@@ -21,7 +21,7 @@ struct Movie {
 extension Movie {
   static var mock: Movie {
     return Movie(title: "Money Plane",
-                 overView: "A professional thief with $40 million in debt and his family's life on the line must commit one final heist - rob a futuristic airborne casino filled with the world's most dangerous criminals.",
+                 overView: "A professional thief with $40 million.",
                  releaseDate: "2020-09-29")
   }
 }

@@ -38,4 +38,3 @@ private enum Constant: String {
   case baseUrl = "BASE_URL"
   case apiKey = "API_KEY"
 }
-
