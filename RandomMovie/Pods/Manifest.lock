@@ -1,5 +1,9 @@
 PODS:
   - Alamofire (5.2.2)
+  - Kingfisher (5.15.4):
+    - Kingfisher/Core (= 5.15.4)
+  - Kingfisher/Core (5.15.4)
+  - MBProgressHUD (1.2.0)
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
   - Moya/RxSwift (14.0.0):
@@ -28,6 +32,8 @@ PODS:
   - Sourcery (1.0.0)
 
 DEPENDENCIES:
+  - Kingfisher
+  - MBProgressHUD
   - Moya/RxSwift
   - OHHTTPStubs/Swift
   - RxBlocking
@@ -39,6 +45,8 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Kingfisher
+    - MBProgressHUD
     - Moya
     - OHHTTPStubs
     - RxBlocking
@@ -50,6 +58,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Kingfisher: 657dc1077e5bbbfff864194c79f29e35b722d062
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   OHHTTPStubs: cb29d2a9d09a828ecb93349a2b0c64f99e0db89f
   RxBlocking: 5f700a78cad61ce253ebd37c9a39b5ccc76477b4
@@ -59,6 +69,6 @@ SPEC CHECKSUMS:
   SnapshotTesting: 38947050d13960d57a4a9c166fcf51bca7d56970
   Sourcery: 928a146ea9b777fa64b0c6ce915c4128b4488cff
 
-PODFILE CHECKSUM: 5bd403daf1bcb01c63c2d85056c7c01c67f742fd
+PODFILE CHECKSUM: 43046e02daab8d3b8a2275f9d5a79a2df3ea731a
 
 COCOAPODS: 1.9.3

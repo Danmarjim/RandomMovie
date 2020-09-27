@@ -7,6 +7,7 @@ final class WelcomeViewController: UIViewController {
   
   override func loadView() {
     super.loadView()
+    welcomeView?.delegate = self
     view = welcomeView as? UIView
   }
   
@@ -17,7 +18,21 @@ final class WelcomeViewController: UIViewController {
 }
 
 extension WelcomeViewController: WelcomeUI {
+  func showLoading() {
+    showLoadingView()
+  }
+  
+  func hideLoading() {
+    hideLoadingView()
+  }
+  
   func setupUI(with movie: Movie) {
     welcomeView?.setup(with: movie)
+  }
+}
+
+extension WelcomeViewController: WelcomeViewDelegate {
+  func didTapOnRefreshButton() {
+    presenter?.didTapOnRefreshButton()
   }
 }

@@ -7,6 +7,8 @@ target 'RandomMovie' do
   pod 'Moya/RxSwift'
   pod 'SnapKit'
   pod 'OHHTTPStubs/Swift'
+  pod 'MBProgressHUD'
+  pod 'Kingfisher'
 
   target 'RandomMovieSnapshotTests' do
     inherit! :search_paths

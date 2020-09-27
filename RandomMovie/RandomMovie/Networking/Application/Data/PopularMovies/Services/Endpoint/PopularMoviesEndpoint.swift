@@ -17,6 +17,7 @@ struct PopularMoviesEndpoint: Endpoint {
   }
   
   func parameters() -> [String: Any]? {
-    return ["api_key": Service.apiKey]
+    return ["api_key": Service.apiKey,
+            "page": Int.random(in: 1..<500)]
   }
 }
