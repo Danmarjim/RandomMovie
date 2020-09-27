@@ -12,8 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
   private func configPalette() {
-    let traitCollection = UITraitCollection()
-    switch traitCollection.userInterfaceStyle {
+    switch UITraitCollection.current.userInterfaceStyle {
     case .light, .unspecified:
       let mode = LightMode()
       assembly.set(mode)

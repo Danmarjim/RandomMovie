@@ -19,11 +19,17 @@ final class WelcomePresenterSpec: XCTestCase {
     sut.didLoad()
     thenLoadPopularMovies()
   }
+  
+  func test_did_refresh_popular_movies() {
+    sut.didTapOnRefreshButton()
+    thenLoadPopularMovies()
+  }
 }
 
 // MARK: - THEN
 extension WelcomePresenterSpec {
   private func thenLoadPopularMovies() {
+    XCTAssertTrue(ui.showLoadingCalled, "Should call showLoading")
     XCTAssertTrue(interactor.loadPopularMoviesCalled, "Should call popular movies service")
   }
 }

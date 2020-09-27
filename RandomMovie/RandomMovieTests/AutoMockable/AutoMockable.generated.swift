@@ -113,8 +113,47 @@ class WelcomePresenterMock: NSObject, WelcomePresenter {
         didLoadClosure?()
     }
 
+    //MARK: - didTapOnRefreshButton
+
+    private(set) var didTapOnRefreshButtonCallsCount = 0
+    var didTapOnRefreshButtonCalled: Bool {
+        return didTapOnRefreshButtonCallsCount > 0
+    }
+    var didTapOnRefreshButtonClosure: (() -> Void)?
+
+    func didTapOnRefreshButton() {
+        didTapOnRefreshButtonCallsCount += 1
+        didTapOnRefreshButtonClosure?()
+    }
+
 }
 class WelcomeUIMock: NSObject, WelcomeUI {
+
+    //MARK: - showLoading
+
+    private(set) var showLoadingCallsCount = 0
+    var showLoadingCalled: Bool {
+        return showLoadingCallsCount > 0
+    }
+    var showLoadingClosure: (() -> Void)?
+
+    func showLoading() {
+        showLoadingCallsCount += 1
+        showLoadingClosure?()
+    }
+
+    //MARK: - hideLoading
+
+    private(set) var hideLoadingCallsCount = 0
+    var hideLoadingCalled: Bool {
+        return hideLoadingCallsCount > 0
+    }
+    var hideLoadingClosure: (() -> Void)?
+
+    func hideLoading() {
+        hideLoadingCallsCount += 1
+        hideLoadingClosure?()
+    }
 
     //MARK: - setupUI
 
@@ -131,6 +170,22 @@ class WelcomeUIMock: NSObject, WelcomeUI {
         setupUIWithReceivedMovie = movie
         setupUIWithReceivedInvocations.append(movie)
         setupUIWithClosure?(movie)
+    }
+
+}
+class WelcomeViewDelegateMock: NSObject, WelcomeViewDelegate {
+
+    //MARK: - didTapOnRefreshButton
+
+    private(set) var didTapOnRefreshButtonCallsCount = 0
+    var didTapOnRefreshButtonCalled: Bool {
+        return didTapOnRefreshButtonCallsCount > 0
+    }
+    var didTapOnRefreshButtonClosure: (() -> Void)?
+
+    func didTapOnRefreshButton() {
+        didTapOnRefreshButtonCallsCount += 1
+        didTapOnRefreshButtonClosure?()
     }
 
 }
