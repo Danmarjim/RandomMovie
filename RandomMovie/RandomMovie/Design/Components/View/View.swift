@@ -19,7 +19,7 @@ open class View: UIView {
   }
   
   private func setup() {
-    backgroundColor = Palette.mode.background
+    backgroundColor = .white
     setupView()
     setupConstraints()
   }

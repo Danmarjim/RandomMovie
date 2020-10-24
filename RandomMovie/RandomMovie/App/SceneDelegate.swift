@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   }
   
   private func setRootViewController() -> UIViewController {
-    let rootViewController = assembly.welcomeViewController()
+    let rootViewController = assembly.homeViewController()
     return rootViewController
   }
 }

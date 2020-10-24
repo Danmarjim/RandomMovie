@@ -12,15 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
   private func configPalette() {
-    switch UITraitCollection.current.userInterfaceStyle {
-    case .light, .unspecified:
-      let mode = LightMode()
-      assembly.set(mode)
-    case .dark:
-      let mode = DarkMode()
-      assembly.set(mode)
-    @unknown default:
-      fatalError()
-    }
+    let mode = MainMode()
+    assembly.set(mode)
   }
 }

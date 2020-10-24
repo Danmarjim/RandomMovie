@@ -6,17 +6,17 @@ var emptyError: Error {
   return NSError(domain: "domain", code: 0, userInfo: ["":""]) as Error
 }
 
-final class WelcomeInteractorSpec: XCTestCase {
+final class HomeInteractorSpec: XCTestCase {
   
-  private var delegate: WelcomeInteractorDelegateMock!
+  private var delegate: HomeInteractorDelegateMock!
   private var listMovies: PopularMoviesUseCaseMock!
-  private var sut: WelcomeInteractor!
+  private var sut: HomeInteractor!
   
   override func setUp() {
     super.setUp()
-    delegate = WelcomeInteractorDelegateMock()
+    delegate = HomeInteractorDelegateMock()
     listMovies = PopularMoviesUseCaseMock()
-    sut = DefaultWelcomeInteractor(popularMovies: listMovies)
+    sut = DefaultHomeInteractor(popularMovies: listMovies)
     sut.delegate = delegate
   }
   
@@ -34,7 +34,7 @@ final class WelcomeInteractorSpec: XCTestCase {
 }
 
 // MARK: - GIVEN
-extension WelcomeInteractorSpec {
+extension HomeInteractorSpec {
   private func givenPopularMovies() -> Single<ListMovies> {
     Single.create { event in
       event(.success(ListMovies.mock))
@@ -51,7 +51,7 @@ extension WelcomeInteractorSpec {
 }
 
 // MARK: - THEN
-extension WelcomeInteractorSpec {
+extension HomeInteractorSpec {
   private func thenDidLoadPopularMovies() {
     XCTAssertTrue(delegate.didLoadPopularMoviesCalled, "Should load popular movies")
   }

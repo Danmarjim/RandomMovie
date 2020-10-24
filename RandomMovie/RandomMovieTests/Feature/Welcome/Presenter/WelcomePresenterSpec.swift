@@ -3,15 +3,15 @@ import XCTest
 
 final class WelcomePresenterSpec: XCTestCase {
   
-  private var ui: WelcomeUIMock!
-  private var interactor: WelcomeInteractorMock!
-  private var sut: DefaultWelcomePresenter!
+  private var ui: HomeUIMock!
+  private var interactor: HomeInteractorMock!
+  private var sut: DefaultHomePresenter!
   
   override func setUp() {
     super.setUp()
-    ui = WelcomeUIMock()
-    interactor = WelcomeInteractorMock()
-    sut = DefaultWelcomePresenter(interactor: interactor)
+    ui = HomeUIMock()
+    interactor = HomeInteractorMock()
+    sut = DefaultHomePresenter(interactor: interactor)
     sut.ui = ui
   }
   
