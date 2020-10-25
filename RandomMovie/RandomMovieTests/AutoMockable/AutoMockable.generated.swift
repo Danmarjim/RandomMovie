@@ -26,25 +26,8 @@ import AppKit
 
 
 
-class PopularMoviesUseCaseMock: NSObject, PopularMoviesUseCase {
-
-    //MARK: - execute
-
-    private(set) var executeCallsCount = 0
-    var executeCalled: Bool {
-        return executeCallsCount > 0
-    }
-    var executeReturnValue: Single<ListMovies>!
-    var executeClosure: (() -> Single<ListMovies>)?
-
-    func execute() -> Single<ListMovies> {
-        executeCallsCount += 1
-        return executeClosure.map({ $0() }) ?? executeReturnValue
-    }
-
-}
-class WelcomeInteractorMock: NSObject, WelcomeInteractor {
-    var delegate: WelcomeInteractorDelegate?
+class HomeInteractorMock: NSObject, HomeInteractor {
+    var delegate: HomeInteractorDelegate?
 
     //MARK: - loadPopularMovies
 
@@ -60,7 +43,7 @@ class WelcomeInteractorMock: NSObject, WelcomeInteractor {
     }
 
 }
-class WelcomeInteractorDelegateMock: NSObject, WelcomeInteractorDelegate {
+class HomeInteractorDelegateMock: NSObject, HomeInteractorDelegate {
 
     //MARK: - didLoad
 
@@ -97,8 +80,8 @@ class WelcomeInteractorDelegateMock: NSObject, WelcomeInteractorDelegate {
     }
 
 }
-class WelcomePresenterMock: NSObject, WelcomePresenter {
-    var ui: WelcomeUI?
+class HomePresenterMock: NSObject, HomePresenter {
+    var ui: HomeUI?
 
     //MARK: - didLoad
 
@@ -127,7 +110,7 @@ class WelcomePresenterMock: NSObject, WelcomePresenter {
     }
 
 }
-class WelcomeUIMock: NSObject, WelcomeUI {
+class HomeUIMock: NSObject, HomeUI {
 
     //MARK: - showLoading
 
@@ -173,7 +156,7 @@ class WelcomeUIMock: NSObject, WelcomeUI {
     }
 
 }
-class WelcomeViewDelegateMock: NSObject, WelcomeViewDelegate {
+class HomeViewDelegateMock: NSObject, HomeViewDelegate {
 
     //MARK: - didTapOnRefreshButton
 
@@ -186,6 +169,23 @@ class WelcomeViewDelegateMock: NSObject, WelcomeViewDelegate {
     func didTapOnRefreshButton() {
         didTapOnRefreshButtonCallsCount += 1
         didTapOnRefreshButtonClosure?()
+    }
+
+}
+class PopularMoviesUseCaseMock: NSObject, PopularMoviesUseCase {
+
+    //MARK: - execute
+
+    private(set) var executeCallsCount = 0
+    var executeCalled: Bool {
+        return executeCallsCount > 0
+    }
+    var executeReturnValue: Single<ListMovies>!
+    var executeClosure: (() -> Single<ListMovies>)?
+
+    func execute() -> Single<ListMovies> {
+        executeCallsCount += 1
+        return executeClosure.map({ $0() }) ?? executeReturnValue
     }
 
 }

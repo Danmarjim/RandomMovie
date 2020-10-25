@@ -1,9 +1,9 @@
-final class DefaultWelcomePresenter: WelcomePresenter {
+final class DefaultHomePresenter: HomePresenter {
   
-  var ui: WelcomeUI?
-  private let interactor: WelcomeInteractor
+  var ui: HomeUI?
+  private let interactor: HomeInteractor
   
-  init(interactor: WelcomeInteractor) {
+  init(interactor: HomeInteractor) {
     self.interactor = interactor
   }
   
@@ -18,7 +18,7 @@ final class DefaultWelcomePresenter: WelcomePresenter {
   }
 }
 
-extension DefaultWelcomePresenter: WelcomeInteractorDelegate {
+extension DefaultHomePresenter: HomeInteractorDelegate {
   func didLoad(popularMovies: ListMovies) {
     ui?.hideLoading()
     guard let randomMovie = popularMovies.movies.randomElement() else { return }

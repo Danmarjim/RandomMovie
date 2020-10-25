@@ -1,14 +1,14 @@
 import UIKit
 
-final class WelcomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
   
-  var presenter: WelcomePresenter?
-  var welcomeView: WelcomeView?
+  var presenter: HomePresenter?
+  var homeView: HomeView?
   
   override func loadView() {
     super.loadView()
-    welcomeView?.delegate = self
-    view = welcomeView as? UIView
+    homeView?.delegate = self
+    view = homeView as? UIView
   }
   
   override func viewDidLoad() {
@@ -17,7 +17,7 @@ final class WelcomeViewController: UIViewController {
   }
 }
 
-extension WelcomeViewController: WelcomeUI {
+extension HomeViewController: HomeUI {
   func showLoading() {
     showLoadingView()
   }
@@ -27,11 +27,11 @@ extension WelcomeViewController: WelcomeUI {
   }
   
   func setupUI(with movie: Movie) {
-    welcomeView?.setup(with: movie)
+    homeView?.setup(with: movie)
   }
 }
 
-extension WelcomeViewController: WelcomeViewDelegate {
+extension HomeViewController: HomeViewDelegate {
   func didTapOnRefreshButton() {
     presenter?.didTapOnRefreshButton()
   }

@@ -4,13 +4,13 @@ import XCTest
 final class WelcomeViewSpec: XCTestCase {
   
   func test_initial_view() {
-    assertSnapshot(with: view())
+    assertSnapshot(with: view(), record: true)
   }
 }
 
 extension WelcomeViewSpec {
-  private func view() -> DefaultWelcomeView {
-    let welcomeView = DefaultWelcomeView()
+  private func view() -> DefaultHomeView {
+    let welcomeView = DefaultHomeView()
     welcomeView.setup(with: .mock)
     return welcomeView
   }
