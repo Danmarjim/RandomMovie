@@ -3,7 +3,7 @@ import SnapKit
 import Kingfisher
 
 private enum ViewLayout {
-  static let imageHeight = CGFloat(450)
+  static let imageHeight = CGFloat(350)
 }
 
 final class DefaultHomeView: View, HomeView {
@@ -24,7 +24,7 @@ final class DefaultHomeView: View, HomeView {
   
   private var titleLabel: UILabel = {
     let label = UILabel()
-    label.textColor = Palette.mode.preferredButtonTextColor
+    label.textColor = Palette.mode.secondaryColor.regular
     label.font = Fontbook.medium.xxl
     label.numberOfLines = 0
     label.textAlignment = .left
@@ -68,9 +68,9 @@ final class DefaultHomeView: View, HomeView {
       make.height.equalTo(ViewLayout.imageHeight)
     }
     titleLabel.snp.makeConstraints { make in
-      make.top.equalTo(imageView.snp.bottom).offset(-Spacing.xl)
       make.leading.equalTo(self).offset(Spacing.s)
       make.trailing.equalTo(self).offset(-Spacing.s)
+      make.bottom.equalTo(imageView.snp.bottom).offset(-Spacing.s)
     }
     scrollView.snp.makeConstraints { make in
       make.top.equalTo(imageView.snp.bottom)
@@ -78,7 +78,7 @@ final class DefaultHomeView: View, HomeView {
       make.trailing.equalToSuperview()
     }
     overviewLabel.snp.makeConstraints { make in
-      make.top.equalTo(scrollView).offset(Spacing.l)
+      make.top.equalTo(scrollView).offset(Spacing.s)
       make.leading.equalTo(imageView).offset(Spacing.s)
       make.trailing.equalTo(imageView).offset(-Spacing.s)
       make.bottom.equalTo(scrollView.snp.bottom).offset(-Spacing.s)

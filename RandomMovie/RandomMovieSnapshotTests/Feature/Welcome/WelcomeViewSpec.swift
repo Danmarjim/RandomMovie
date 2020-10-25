@@ -4,7 +4,7 @@ import XCTest
 final class WelcomeViewSpec: XCTestCase {
   
   func test_initial_view() {
-    assertSnapshot(with: view())
+    assertSnapshot(with: view(), record: true)
   }
 }
 
