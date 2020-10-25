@@ -74,6 +74,11 @@
 		1DDB8C4B251F49A000F20AD8 /* popular.movies.ok.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DDB8C4A251F497700F20AD8 /* popular.movies.ok.json */; };
 		1DDB8C4D251F49BD00F20AD8 /* PopularMoviesRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB8C4C251F49BD00F20AD8 /* PopularMoviesRepositorySpec.swift */; };
 		1DDB8C50251F4B7100F20AD8 /* TestSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB8C4F251F4B7100F20AD8 /* TestSetup.swift */; };
+		1DF179672546165A00A9E28A /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF179662546165A00A9E28A /* OnBoardingViewController.swift */; };
+		1DF179712546167100A9E28A /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF179702546167100A9E28A /* OnBoardingView.swift */; };
+		1DF179772546169A00A9E28A /* OnBoardingViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF179762546169A00A9E28A /* OnBoardingViewDelegate.swift */; };
+		1DF179812546170F00A9E28A /* DefaultOnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF179802546170F00A9E28A /* DefaultOnBoardingView.swift */; };
+		1DF1799925461F1D00A9E28A /* Assembly+OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1799825461F1D00A9E28A /* Assembly+OnBoarding.swift */; };
 		269481CF36C6C4A64E304E04 /* Pods_RandomMovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0668F977679DD052308481A8 /* Pods_RandomMovieTests.framework */; };
 		2BBD7ECC3F00AE75A225A521 /* Pods_RandomMovieSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8DA454E006A189D0EC14DE /* Pods_RandomMovieSnapshotTests.framework */; };
 		4BAB45437D3707B1164BC208 /* Pods_RandomMovie_RandomMovieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82B58794F294A1AA1D6268B /* Pods_RandomMovie_RandomMovieUITests.framework */; };
@@ -181,6 +186,11 @@
 		1DDB8C4A251F497700F20AD8 /* popular.movies.ok.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = popular.movies.ok.json; sourceTree = "<group>"; };
 		1DDB8C4C251F49BD00F20AD8 /* PopularMoviesRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesRepositorySpec.swift; sourceTree = "<group>"; };
 		1DDB8C4F251F4B7100F20AD8 /* TestSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSetup.swift; sourceTree = "<group>"; };
+		1DF179662546165A00A9E28A /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		1DF179702546167100A9E28A /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		1DF179762546169A00A9E28A /* OnBoardingViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewDelegate.swift; sourceTree = "<group>"; };
+		1DF179802546170F00A9E28A /* DefaultOnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultOnBoardingView.swift; sourceTree = "<group>"; };
+		1DF1799825461F1D00A9E28A /* Assembly+OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+OnBoarding.swift"; sourceTree = "<group>"; };
 		49F7B4BE53AD5AAD28D09091 /* Pods-RandomMovieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomMovieTests.debug.xcconfig"; path = "Target Support Files/Pods-RandomMovieTests/Pods-RandomMovieTests.debug.xcconfig"; sourceTree = "<group>"; };
 		504E1CEEF3C86A918D4CCE9A /* Pods-RandomMovieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomMovieTests.release.xcconfig"; path = "Target Support Files/Pods-RandomMovieTests/Pods-RandomMovieTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A8AC99066209BE28DD094A9 /* Pods-RandomMovie-RandomMovieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomMovie-RandomMovieUITests.debug.xcconfig"; path = "Target Support Files/Pods-RandomMovie-RandomMovieUITests/Pods-RandomMovie-RandomMovieUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -528,6 +538,7 @@
 		1D7EFEC4251CE6F1004BA416 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				1DF179632546161800A9E28A /* OnBoarding */,
 				1D7EFEC5251CE712004BA416 /* Home */,
 			);
 			path = Feature;
@@ -911,6 +922,50 @@
 				1DDB8C4F251F4B7100F20AD8 /* TestSetup.swift */,
 			);
 			path = TestSetup;
+			sourceTree = "<group>";
+		};
+		1DF179632546161800A9E28A /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				1DF179642546162700A9E28A /* View */,
+				1DF1799625461EFB00A9E28A /* Infrastructure */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		1DF179642546162700A9E28A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DF179652546164600A9E28A /* Default */,
+				1DF179662546165A00A9E28A /* OnBoardingViewController.swift */,
+				1DF179702546167100A9E28A /* OnBoardingView.swift */,
+				1DF179762546169A00A9E28A /* OnBoardingViewDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DF179652546164600A9E28A /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				1DF179802546170F00A9E28A /* DefaultOnBoardingView.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		1DF1799625461EFB00A9E28A /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				1DF1799725461F0600A9E28A /* Assembly */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		1DF1799725461F0600A9E28A /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				1DF1799825461F1D00A9E28A /* Assembly+OnBoarding.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		6CF8E60F0CD5E0ECC2C08DA0 /* Frameworks */ = {
@@ -1338,6 +1393,7 @@
 				1D75DEEA251CE9A3005EAE89 /* DefaultHomeView.swift in Sources */,
 				1D7258652520D995007D99C3 /* UIViewController+Loading.swift in Sources */,
 				1DB2679B251E8F8500798CD6 /* PopularMoviesApiToDomainMapper.swift in Sources */,
+				1DF179672546165A00A9E28A /* OnBoardingViewController.swift in Sources */,
 				1DB26778251E879600798CD6 /* PopularMovies.swift in Sources */,
 				1D75DF0D251CF5A8005EAE89 /* Bundle+Framework.swift in Sources */,
 				1D91259125449ED8003C243E /* PrimaryButtonViewModel.swift in Sources */,
@@ -1352,6 +1408,7 @@
 				1DB26780251E886100798CD6 /* Movie.swift in Sources */,
 				1D75DEF8251CECE6005EAE89 /* HomeUI.swift in Sources */,
 				1DB2674A251E5A2600798CD6 /* Palette.swift in Sources */,
+				1DF179712546167100A9E28A /* OnBoardingView.swift in Sources */,
 				1DB26793251E8CCF00798CD6 /* ListMovies.swift in Sources */,
 				1D75DEF1251CEBE8005EAE89 /* Spacing.swift in Sources */,
 				1DB267B0251E94CA00798CD6 /* HomeInteractorDelegate.swift in Sources */,
@@ -1359,14 +1416,17 @@
 				1DB267AC251E947700798CD6 /* HomeInteractor.swift in Sources */,
 				1D75DEFD251CEF0C005EAE89 /* Font.swift in Sources */,
 				1D75DF06251CF027005EAE89 /* MontserratRegularFont.swift in Sources */,
+				1DF1799925461F1D00A9E28A /* Assembly+OnBoarding.swift in Sources */,
 				1D4796032544905A0061E886 /* StandardGrayScale.swift in Sources */,
 				1D7EFEC2251CE673004BA416 /* Assembly.swift in Sources */,
 				1D75DEFA251CECEF005EAE89 /* DefaultHomePresenter.swift in Sources */,
 				1DB26786251E899800798CD6 /* PopularMoviesService.swift in Sources */,
 				1DB26766251E7AAC00798CD6 /* Networking+UseCases.swift in Sources */,
+				1DF179812546170F00A9E28A /* DefaultOnBoardingView.swift in Sources */,
 				1D912587254498B9003C243E /* PrimaryButton.swift in Sources */,
 				1D7EFE8A251CD327004BA416 /* SceneDelegate.swift in Sources */,
 				1DB2678B251E8B4300798CD6 /* PopularMoviesRepository.swift in Sources */,
+				1DF179772546169A00A9E28A /* OnBoardingViewDelegate.swift in Sources */,
 				1D75DF02251CEFEE005EAE89 /* FontSize.swift in Sources */,
 				1D7258342520C248007D99C3 /* HomeViewDelegate.swift in Sources */,
 				1DB267AE251E94AB00798CD6 /* DefaultHomeInteractor.swift in Sources */,

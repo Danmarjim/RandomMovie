@@ -9,6 +9,7 @@ target 'RandomMovie' do
   pod 'OHHTTPStubs/Swift'
   pod 'MBProgressHUD'
   pod 'Kingfisher'
+  pod 'paper-onboarding'
 
   target 'RandomMovieSnapshotTests' do
     inherit! :search_paths

@@ -172,6 +172,26 @@ class HomeViewDelegateMock: NSObject, HomeViewDelegate {
     }
 
 }
+class OnBoardingViewMock: NSObject, OnBoardingView {
+    var delgate: OnBoardingViewDelegate?
+
+}
+class OnBoardingViewDelegateMock: NSObject, OnBoardingViewDelegate {
+
+    //MARK: - didTapOnFinishOnBoarding
+
+    private(set) var didTapOnFinishOnBoardingCallsCount = 0
+    var didTapOnFinishOnBoardingCalled: Bool {
+        return didTapOnFinishOnBoardingCallsCount > 0
+    }
+    var didTapOnFinishOnBoardingClosure: (() -> Void)?
+
+    func didTapOnFinishOnBoarding() {
+        didTapOnFinishOnBoardingCallsCount += 1
+        didTapOnFinishOnBoardingClosure?()
+    }
+
+}
 class PopularMoviesUseCaseMock: NSObject, PopularMoviesUseCase {
 
     //MARK: - execute
